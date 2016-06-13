@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Home - Austin</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		
+		<div class="container" id="page-wrap">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>A Brief Explanation</h1>
+					<p class="lead">This website is a product of a my desire to learn a little bit of web development as well as an excuse to procrastinate on some classwork. It hosts some of my experiences and projects. Take a look around!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12"> 
+					<a class="button button1" href="about.html" role="button">About Austin</a>
+					<a class="button button1" href="projects.html" role="button">Projects</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="bg">
+			<img src="images/background.jpg" alt="">
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
