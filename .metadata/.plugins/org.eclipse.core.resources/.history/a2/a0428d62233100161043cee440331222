@@ -1,0 +1,115 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Projects - Austin</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/projects.css">
+	<link rel="stylesheet" href="css/general.css">
+</head>
+<!-- /container -->
+<div class="container" id="page-wrap">
+  <div class="page-header">
+    <table class="table-header">
+    	<tr>
+    		<td>
+	    		<a class="button button1" href="index.html" role="button">Home</a>
+    		</td>
+    		<td style="text-align: center;">
+    			<h1 class="text-center">My Project Timeline</h1>
+	    		<small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Sunday, June 12, 2016</time></small>
+    		</td>
+    		<td>
+				<a class="button button1" href="about.html" role="button">About Me</a>
+    		</td>
+    	</tr>
+    </table>
+  </div>
+  <div class="container">
+    <div class="row stylish-panel">
+      <div class="col-md-4">
+        <div>
+          <img src="images/processor.png" alt="Register File" class="img-circle img-thumbnail">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <h2>Processor</h2>
+          <p>Designed a custom ISA to assemble a simple recursive C code snippet. The bit code then follows the datapath in the circuit schematic.
+          </p>
+          <a href="#" class="btn btn-primary" title="See more">See works »</a>
+        </div>
+      </div>
+    </div>
+    <div class="row stylish-panel">
+      <div class="col-md-8">
+        <div>
+          <h2>Goal Tracker Android Application</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#" class="btn btn-primary" title="See more">See works »</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <img src="http://lorempixel.com/200/200/abstract/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        </div>
+      </div>
+    </div>
+    <div class="row stylish-panel">
+      <div class="col-md-4">
+        <div>
+          <img src="http://lorempixel.com/200/200/abstract/4/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <h2>DE2Bot Traveling Salesman Problem Algorithm</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#" class="btn btn-primary" title="See more">See works »</a>
+        </div>
+      </div>
+    </div>
+    <div class="row stylish-panel">
+      <div class="col-md-8">
+        <div>
+          <h2>UROC Password Security Research</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#" class="btn btn-primary" title="See more">See works »</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <img src="http://lorempixel.com/200/200/abstract/5/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        </div>
+      </div>
+    </div>
+    <div class="row stylish-panel">
+      <div class="col-md-4">
+        <div>
+          <img src="http://lorempixel.com/200/200/abstract/6/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <h2>Solar System Simulator - My first "Project"</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#" class="btn btn-primary" title="See more">See works »</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bg">
+	<img src="images/background.jpg" alt="">
+</div>
+
+</html>

@@ -10,14 +10,6 @@
   color: white;
     opacity:1;
 }
-.btn-facebook {
-background-color: #3b5998;
-opacity:0.9;
-}
-.btn-twitter {
-background-color: #00aced;
-opacity:0.9;
-}
 .btn-linkedin {
 background-color:#0e76a8;
 opacity:0.9;
@@ -36,13 +28,17 @@ opacity:0.9;
 }
 
 /* resume stuff */
+.pandel-trans {
+	background-color:rgba(0, 0, 0, 0.0);
+}
 
 .bs-callout {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: #eee;
+    border-color: #3fbfad;
+    background-color:white;
     border-image: none;
     border-radius: 3px;
     border-style: solid;
@@ -56,14 +52,6 @@ opacity:0.9;
 .bs-callout h4 {
     margin-bottom: 10px;
     margin-top: 0;
-}
-
-.bs-callout-danger {
-    border-left-color: #d9534f;
-}
-
-.bs-callout-danger h4{
-    color: #d9534f;
 }
 
 .resume .list-group-item:first-child, .resume .list-group-item:last-child{
