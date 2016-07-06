@@ -6,107 +6,152 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/projects.css">
 	<link rel="stylesheet" href="css/general.css">
+	<link rel="icon" href="images/icon.png">
 </head>
 <!-- /container -->
 <div class="container" id="page-wrap">
   <div class="page-header">
     <table class="table-header">
     	<tr>
-    		<td>
+    		<td style="width:15%">
 	    		<a class="button button1" href="index.html" role="button">Home</a>
     		</td>
-    		<td style="text-align: center;">
+    		<td style="text-align: center;width:70%">
     			<h1 class="text-center">My Project Timeline</h1>
 	    		<small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Sunday, June 12, 2016</time></small>
     		</td>
-    		<td>
+    		<td style="width:15%">
 				<a class="button button1" href="about.html" role="button">About Me</a>
     		</td>
     	</tr>
     </table>
   </div>
-  <a href="">
-  	<div class="container">
+  <div class="container">
+  	  <a href="https://github.com/Atheatos/bill-classification" style="text-decoration: none;">
 	    <div class="row stylish-panel">
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Political Bill Clustering<br/><h5><i class="fa fa-clock-o"></i><time> In Progress</time></h5></h2>
+	          <p>This project is in conjunction with 2 other students and currently in progress. Many people don't have a clue on what congressional bills 
+	          are currently being looked at or passed. The project seeks to solve that problem by finding bills relevant to a user based on what he likes. 
+	          First we scraped the Bills from 1989-present day in the form of text files. Then we generated a Term-Document Matrix using a weighting function 
+	          rooted in Bayesian probability. Next we used hierarchical support vector machines on the different vectors of the matrix as a way of feature 
+	          extraction. Lastly, we will use an undetermined form of unsupervised learning to cluster the features.
+	          </p>
+	          <p>
+	          	Click to view the source code.
+	          </p>
+	        </div>
+	      </div>
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/clustering.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <a href="projects/goaltracker.html" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/gtlogin.png" alt="App" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Goal Tracker Android Application<br/><h5><i class="fa fa-clock-o"></i><time> In Progress</time></h5></h2>
+	          <p>
+	          	An application for Android 6.0+ that keeps tracks of personal goals, allows you to view and encourage friends pursue their goals. The idea of this application is not novel, but it was a great way to get some experience working in both the front and back end of a mini-software engineering project. The code follows MVC patterns.
+	          </p>
+	          <p>
+	          	Click for more details.
+	          </p>
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <a href="projects/processor.html" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Processor (Pipelined and Bussed)<br/><h5><i class="fa fa-clock-o"></i><time> June, 2016</time></h5></h2>
+	          <p>
+	          	Designed a custom ISA to assemble a simple recursive C code snippet. The bit code then follows the datapath in the circuit schematic.
+	          </p>
+	          <p>
+	          	Click for more details.
+	          </p>
+	        </div>
+	      </div>
 	      <div class="col-md-4">
 	        <div>
 	          <img src="images/processor.png" alt="Register File"  class="img-circle img-thumbnail">
 	        </div>
 	      </div>
+	    </div>
+	  </a>
+	  <a href="projects/DE2.html" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/de2bot.png" alt="DE2Bot" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
 	      <div class="col-md-8">
 	        <div>
-	          <h2>Processor</h2>
-	          <p>Designed a custom ISA to assemble a simple recursive C code snippet. The bit code then follows the datapath in the circuit schematic.
+	          <h2>DE2Bot Traveling Salesman Problem Algorithm<br/><h5><i class="fa fa-clock-o"></i><time> November, 2015</time></h5></h2>
+	          <p>
+	          	This project was done in collaberation with three other students. We wrote our implementation of the travelling salesman problem combining VHDL as our hardware desrciption language and Nios II Assembly language. The DE2 Simple Computer was made mobile by attaching it to a bot. Using a C++ preprocessing algorithm to order a given set of points we were able to hit at least twelve points in 12ft by 8ft grid in under a minute.
+	          </p>
+	          <p>
+	          	Click for more details.
 	          </p>
 	        </div>
 	      </div>
 	    </div>
-	</div>
-  </a>
-    <div class="row stylish-panel">
-      <div class="col-md-8">
-        <div>
-          <h2>Goal Tracker Android Application</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <a href="#" class="btn btn-primary" title="See more">See works »</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div>
-          <img src="http://lorempixel.com/200/200/abstract/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-        </div>
-      </div>
-    </div>
-    <div class="row stylish-panel">
-      <div class="col-md-4">
-        <div>
-          <img src="http://lorempixel.com/200/200/abstract/4/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div>
-          <h2>DE2Bot Traveling Salesman Problem Algorithm</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <a href="#" class="btn btn-primary" title="See more">See works »</a>
-        </div>
-      </div>
-    </div>
-    <div class="row stylish-panel">
-      <div class="col-md-8">
-        <div>
-          <h2>UROC Password Security Research</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <a href="#" class="btn btn-primary" title="See more">See works »</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div>
-          <img src="http://lorempixel.com/200/200/abstract/5/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-        </div>
-      </div>
-    </div>
-    <div class="row stylish-panel">
-      <div class="col-md-4">
-        <div>
-          <img src="http://lorempixel.com/200/200/abstract/6/" alt="Texto Alternativo" class="img-circle img-thumbnail">
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div>
-          <h2>Solar System Simulator - My first "Project"</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <a href="#" class="btn btn-primary" title="See more">See works »</a>
-        </div>
-      </div>
-    </div>
+	  </a>
+	  <a href="http://www.cc.gatech.edu/~vempala/papers/phuspcs.pdf" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-8">
+	        <div>
+	          <h2>UROC Password Security Research<br/><h5><i class="fa fa-clock-o"></i><time> October, 2015</time></h5></h2>
+	          <p>
+	          	I participated in this research under Santosh Vempala Ph.D. The main objective was to develop humanly computable password schemas 
+	          	that provide security as as well as usability. This this involved determining an optimal preprocessing time that works in harmony 
+	          	with a short, easy run time. 
+	          </p>
+	          <p>
+	          	The paper on the details is linked for the interested reader.
+	          </p>
+	        </div>
+	      </div>
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/uroc.png" alt="UROC" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <a href="projects/solarSys.html" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/system.png" alt="Plaentarium" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Solar System Simulator - My First "Project"<br/><h5><i class="fa fa-clock-o"></i><time> January, 2015</time></h5></h2>
+	          <p>
+	          	This project isn't all that impressive but it stands as a reminder that when you learn new things that you have to start somewhere. I made it using javaFX after taking my first CS class.
+	          </p>
+	          <p>
+	          	Click for more details.
+	          </p>
+	        </div>
+	      </div>
+	    </div>
+	  </a>
   </div>
 </div>
 

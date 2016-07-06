@@ -1,0 +1,42 @@
+body {
+	color: #fff;
+}
+
+.stylish-panel{
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+    color:white;
+}
+
+.stylish-panel a:hover{
+    text-decoration: none;
+}
+
+.stylish-panel img{
+    width: 300px;
+    height:300px
+}
+
+.stylish-panel:hover{
+    margin-top: -10px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    transition: 0.5s;
+}
+
+.stylish-panel:hover img {
+	
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}

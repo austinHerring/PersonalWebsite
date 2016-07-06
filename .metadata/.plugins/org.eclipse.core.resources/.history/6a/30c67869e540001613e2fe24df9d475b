@@ -1,0 +1,141 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Projects - Austin</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/projects.css">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="icon" href="images/icon.png">
+</head>
+<!-- /container -->
+<div class="container" id="page-wrap">
+  <div class="page-header">
+    <table class="table-header">
+    	<tr>
+    		<td>
+	    		<a class="button button1" href="index.html" role="button">Home</a>
+    		</td>
+    		<td style="text-align: center;">
+    			<h1 class="text-center">My Project Timeline</h1>
+	    		<small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Sunday, June 12, 2016</time></small>
+    		</td>
+    		<td>
+				<a class="button button1" href="about.html" role="button">About Me</a>
+    		</td>
+    	</tr>
+    </table>
+  </div>
+  <div class="container">
+  	  <a href="https://github.com/Atheatos/bill-classification" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Political Bill Clustering</h2>
+	          <p>This project is in conjunction with 2 other students and currently in progress. Many people don't have a clue on what congressional bills 
+	          are currently being looked at or passed. The project seeks to solve that problem by finding bills relevant to a user based on what he likes. 
+	          First we scraped the Bills from 1989-present day in the form of text files. Then we generated a Term-Document Matrix using a weighting function 
+	          rooted in Bayesian probability. Next we used hierarchical support vector machines on the different vectors of the matrix as a way of feature 
+	          extraction. Lastly, we will use an undetermined form of unsupervised learning to cluster the features. Click to view the source code.
+	          </p>
+	        </div>
+	      </div>
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/clustering.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <a href="" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/processor.png" alt="Register File"  class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Processor (Pipelined and Bussed)</h2>
+	          <p>Designed a custom ISA to assemble a simple recursive C code snippet. The bit code then follows the datapath in the circuit schematic.
+	          </p>
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <a href="" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Goal Tracker Android Application</h2>
+	          <p>An application for Android 6.0+ that keeps tracks of personal goals, allows you to view and encourage friends pursue their 
+	          goals. The idea of this application is not novel, but it was a great way to get some experience working in both the front and 
+	          back end of a mini-software engineering project. The code follows MVC patterns.
+	          </p>
+	        </div>
+	      </div>
+	      <div class="col-md-4">
+	        <div>
+	          <img src="http://lorempixel.com/200/200/abstract/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <a href="" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/de2bot.png" alt="DE2Bot" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	      <div class="col-md-8">
+	        <div>
+	          <h2>DE2Bot Traveling Salesman Problem Algorithm</h2>
+	          <p>Working in a team of 4, we programmed a bot to travel through random points in an arena as close to optimal time as possible
+	          </p>
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <a href="http://www.cc.gatech.edu/~vempala/papers/phuspcs.pdf" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-8">
+	        <div>
+	          <h2>UROC Password Security Research</h2>
+	          <p>
+	          	I participated in this research under Santosh Vempala PhD. The main objective was to develop humanly computable password schemas 
+	          	that provide security as as well as usability. The paper on the details is linked for the interested reader.
+	          </p>
+	        </div>
+	      </div>
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/uroc.png" alt="UROC" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <a href="projects/solarSys.html" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/system.png" alt="Plaentarium" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Solar System Simulator - My first "Project"</h2>
+	          <p>This cute project :) Just a reminder that when you learn new things that you have to start somewhere.
+	          </p>
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+  </div>
+</div>
+
+<div id="bg">
+	<img src="images/background.jpg" alt="">
+</div>
+
+</html>
