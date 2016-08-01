@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>Solar System Simulator</title>
+	<title>Processor Fun</title>
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="../css/projects.css">
@@ -25,6 +25,60 @@
 	    	</tr>
 	    </table>
 	</div>
+
+	<div class="bs-callout">
+		<p>
+			<a href="http://www.cburch.com/logisim/">Logisim</a> was the software used to simulate the hardware for these projects. For my bussed processor I made my own ISA that basically merged two other ones I knew: LC-3 and LC-2200. I added to create a micro controller than would interpret the string of 32 bits for each instruction and make a state machine that would perform the instructions with the least number of clock cycles. On average it took 3 clock cycles for most instructions and 2 for the FETCH procedure. The following is the description of the ISA.
+		</p>
+  	</div>
+
+  	<div class="bs-callout">
+		<div style="margin: 0px 0px 10px 0px;">
+			<img src="../images/ISA.png" alt="ISA">
+		</div>
+		<div style="margin: 0px 0px 10px 0px;">
+			<img src="../images/ISA2.png" alt="ISA">
+		</div>
+  	</div>
+
+  	<div class="bs-callout">
+		<p>
+			This is the top level view. Its modulated into 5 components. The Arithmetic and Logic Unit was simple to make and supports basic mathematical computations. The register file is single ported and holds the 16 registers outlined in the ISA above. Memory is just some RAM. The Controller contains the most interesting logic. It uses a 3 ROM system as a state machine that will check for branches. It also serves as the decoder.
+		</p>
+		<div style="margin: 0px 0px 10px 0px;">
+			<img src="../images/processorB.png" alt="Bus_Processor" style="display: block;margin: auto;width: 100%;">
+		</div>
+  	</div>
+
+  	<div class="bs-callout">
+		<p>
+			The following is a 5 staged Pipeline processor. It turned out being fairly complex as I added improvements. Also my design performed 47% faster on the benchmark than the class average, which made me happy :). It included a forwarding unit that dramatically reduced stalling for any data hazards. It included a JALR and BEQ Traget Buffer that served a small cache to remember branch cases, thus reducing the amount of Control Hazards. Because the schematic is very large I'll only include the most important parts in the images.
+		</p>
+  	</div>
+
+  	<div class="bs-callout">
+		<p>
+			This is the Fetch and Instruction Decoding stages. The Instruction RAM loads the assembled code and send it to the buffer for a single clock cycle. The Fetch stage is responsible for handling the Control Hazards with its Target buffer and Flush input. The ID/RR stage mainly has a duel ported register file that it reads from. This handles the data hazards because the forwarding unit will pull from the 3 later stages and output to this stage if needed.
+		</p>
+		<div style="margin: 0px 0px 10px 0px;">
+			<img src="../images/fetch_idrr.png" alt="PipeLine_Processor" style="display: block;margin: auto;width: 100%;">
+		</div>
+  	</div>
+
+  	<div class="bs-callout">
+		<p>
+			This is the more simple part of the processor. The Execute stage performs logic with the ALU. If there is a load word instruction then the flushing unti will send NOOP instructions to the previous two stages. The memory stage updates any data components of RAM. The write back stage. Writes to the destination register if applicable.
+		</p>
+		<div style="margin: 0px 0px 10px 0px;">
+			<img src="../images/EX_MEM_WB.png" alt="PipeLine_Processor" style="display: block;margin: auto;width: 100%;">
+		</div>
+  	</div>
+
+  	<div class="bs-callout">
+		<p>
+			I'd be happy to go into more detail about this with anyone. I really enjoyed making this and striving to optimize it! Though I doubt anyone will actually read this far. 
+		</p>
+  	</div>
 </div>
 
 <div id="bg">

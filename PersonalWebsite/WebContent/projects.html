@@ -18,7 +18,7 @@
     		</td>
     		<td style="text-align: center;width:70%">
     			<h1 class="text-center">My Project Timeline</h1>
-	    		<small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Sunday, June 12, 2016</time></small>
+	    		<small> <i class="fa fa-clock-o"></i> Last Updated on: <time>Sunday, July 31, 2016</time></small>
     		</td>
     		<td style="width:15%">
 				<a class="button button1" href="about.html" role="button">About Me</a>
@@ -26,37 +26,8 @@
     	</tr>
     </table>
   </div>
-  <div class="container">
-  	  <a href="https://github.com/Atheatos/bill-classification" style="text-decoration: none;">
-	    <div class="row stylish-panel">
-	      <div class="col-md-8">
-	        <div>
-	          <h2>Political Bill Clustering<br/><h5><i class="fa fa-clock-o"></i><time> In Progress</time></h5></h2>
-	          <p>This project is in conjunction with 2 other students and currently in progress. Many people don't have a clue on what congressional bills 
-	          are currently being looked at or passed. The project seeks to solve that problem by finding bills relevant to a user based on what he likes. 
-	          First we scraped the Bills from 1989-present day in the form of text files. Then we generated a Term-Document Matrix using a weighting function 
-	          rooted in Bayesian probability. Next we used hierarchical support vector machines on the different vectors of the matrix as a way of feature 
-	          extraction. Lastly, we will use an undetermined form of unsupervised learning to cluster the features.
-	          </p>
-	          <p>
-	          	Click to view the source code.
-	          </p>
-	        </div>
-	      </div>
-	      <div class="col-md-4">
-	        <div>
-	          <img src="images/clustering.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
-	        </div>
-	      </div>
-	    </div>
-	  </a>
 	  <a href="projects/goaltracker.html" style="text-decoration: none;">
 	    <div class="row stylish-panel">
-	      <div class="col-md-4">
-	        <div>
-	          <img src="images/gtlogin.png" alt="App" class="img-circle img-thumbnail">
-	        </div>
-	      </div>
 	      <div class="col-md-8">
 	        <div>
 	          <h2>Goal Tracker Android Application<br/><h5><i class="fa fa-clock-o"></i><time> In Progress</time></h5></h2>
@@ -68,6 +39,32 @@
 	          </p>
 	        </div>
 	      </div>
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/gtlogin.png" alt="App" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	    </div>
+	  </a>
+	  <div class="container">
+  	  <a href="https://github.com/Atheatos/bill-classification/blob/master/paper-final/final_report.pdf" style="text-decoration: none;">
+	    <div class="row stylish-panel">
+	      <div class="col-md-4">
+	        <div>
+	          <img src="images/clustering.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
+	        </div>
+	      </div>
+	      <div class="col-md-8">
+	        <div>
+	          <h2>Political Bill Classification<br/><h5><i class="fa fa-clock-o"></i><time> August, 2016</time></h5></h2>
+	          <p>
+	          	This project was done in conjunction with "2" other students (really 1). Many people don't have a clue on what congressional bills are currently being looked at or passed. The project seeks to solve that problem by finding bills relevant to a user based on what he likes. First we scraped the Bills from 1989-present day in the form of text files. Then we generated a Term-Document Matrix using a weighting function rooted in Bayesian probability. Next we used hierarchical support vector machines on the different vectors of the matrix as a way of feature extraction. Lastly, we used Latent Semantic Indexing and Term Frequency-Inverse Document Frequency to create weighted feature vectors that we then ran the hierarchy classifier to gain improved results.features.
+	          </p>
+	          <p>
+	          	Click to view the report with our conclusions and procedures. It is in a repository so the source code is within the same project directory.
+	          </p>
+	        </div>
+	      </div>
 	    </div>
 	  </a>
 	  <a href="projects/processor.html" style="text-decoration: none;">
@@ -76,7 +73,7 @@
 	        <div>
 	          <h2>Processor (Pipelined and Bussed)<br/><h5><i class="fa fa-clock-o"></i><time> June, 2016</time></h5></h2>
 	          <p>
-	          	Designed a custom ISA to assemble a simple recursive C code snippet. The bit code then follows the datapath in the circuit schematic.
+	          	Designed a custom Instruction Set Architecture to assemble a simple recursive C code snippet. The assembled instructions are them stored into RAM and executed along my datapath in the circuit schematic. The naive bussed approach and pipelined versions were both implemented. The pipelined version is sweeeeeeet!
 	          </p>
 	          <p>
 	          	Click for more details.
