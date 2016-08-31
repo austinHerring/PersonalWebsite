@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>EvolveEval</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../css/projects.css">
+	<link rel="stylesheet" href="../css/general.css">
+	<link rel="icon" href="../images/icon.png">
+</head>
+<!-- /container -->
+<div class="container" id="page-wrap">
+	<div class="page-header">
+    	<table class="table-header">
+	    	<tr>
+	    		<td style="width:15%;">
+		    		<a class="button button1" href="../projects.html" role="button">Back</a>
+	    		</td>
+	    		<td style="text-align: center;width: 70%;">
+	    			<h1 class="text-center">EvolveEval: A Tool for Pokemon GO</h1>
+		    		<small> <i class="fa fa-clock-o"></i><time> August, 2016</time></small>
+	    		</td>
+	    		<td  style="width:15%;">
+	    		</td>
+	    	</tr>
+	    </table>
+	</div>
+
+	<div style="margin: 0px 0px 10px 0px;">
+		<img src="../images/hi_res_icon.png" alt="app_icon" style="display: block;margin: auto;" height="128" width="128">
+	</div>
+	<div class="bs-callout">
+		<h1>App Features</h1>
+		<p>
+			Evolving pokémon during a Lucky Egg is one of the best ways to gain experience in Pokemon GO! But determining how many pokémon can evolve and the amount of experience that will be gained, can be a bit tricky to figure out. This app seeks to solve that problem! 
+		</p>
+		<p>
+			Containing all of the pokémon in the Pokemon Go Pokédex, this calculator will display the total number of possible evolutions and experience. After the trainer enters
+			<ol>
+				<li>Any evolution line</li>
+				<li>The number of candies for that line</li>
+				<li>The number of each pokémon in that line</li>
+				<li>Whether it is registered in the Pokédex</li>
+			</ol>
+			he/she will be able to determine if the Lucky Egg is ready to be used.
+		</p>
+  	</div>
+	<div class="bs-callout">
+		<div class="col-md-6">
+			<img src="../images/demo_screen_1.png" alt="demo_screen_1" style="display: block;margin: auto;height:400;width:auto">
+		</div>
+		<div class="col-md-6">
+			<img src="../images/demo_screen_2.png" alt="demo_screen_2" style="display: block;margin: auto;height:400;width:auto">
+		</div>
+        <a href="../apks/app-release.apk">
+			<img src="../images/button_googlePlay.png" alt="app_store" style="display: block;margin:auto;width:auto;height:64px;">
+		</a>
+		<p>
+			Disclaimer: I am having trouble publishing this app on the store because the Impersonation policy. I am working with them to change my app so that it may be published. I'm not exectly sure what the problemis, so for the time being the button will download the apk to the device directly. (You need to allow Unknown Sources in your Device Security!)
+		</p>
+	</div>
+	<div class="bs-callout" class="col-md-12">
+		<h1>Code Summary</h1>
+		<p>
+			The app architecture is simple and can be found <a href="https://github.com/austinHerring/Pokevolver">here</a>. These are some of the notable features:
+			<ul>
+				<li>
+					Python script that scraps Pokemon GO images of <a href="http://www.pokego.org/pokedex/">their website</a> as well as candies from <a href="https://pokemon.agne.no/candyMaker.php?base=000000&secondary=FFFFFF&zoom=.175">here</a> to the local resources file.
+				</li>
+				<li>
+					SQLite database to holding a table of the pokedex from which the content provider pulls.
+				</li>
+				<li>
+					List adapters that create the modules for each evolution line. The modules are then mapped into varialbes of the Equation model.
+				</li>
+				<li>
+					Some poorly design UI... :) Not great at that kind of thing
+				</li>
+			</ul>
+		</p>
+  	</div>
+
+</div>
+
+<div id="bg">
+	<img src="../images/background.jpg" alt="">
+</div>
+</html>
