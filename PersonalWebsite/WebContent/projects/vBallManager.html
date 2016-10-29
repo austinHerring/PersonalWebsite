@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Volleyball App</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../css/projects.css">
+	<link rel="stylesheet" href="../css/general.css">
+	<link rel="icon" href="../images/icon.png">
+</head>
+<!-- /container -->
+<div class="container" id="page-wrap">
+	<div class="page-header">
+    	<table class="table-header">
+	    	<tr>
+	    		<td style="width:15%;">
+		    		<a class="button button1" href="../projects.html" role="button">Back</a>
+	    		</td>
+	    		<td style="text-align: center;width: 70%;">
+	    			<h1 class="text-center">Volleyball Tournament Manager</h1>
+		    		<small> <i class="fa fa-clock-o"></i><time> October, 2016</time></small>
+	    		</td>
+	    		<td  style="width:15%;">
+	    		</td>
+	    	</tr>
+	    </table>
+	</div>
+
+	<div class="bs-callout">
+		<h1>App Features</h1>
+		<p>
+			The live app can be found <a href="https://volleyball-manager.herokuapp.com/">here</a>. It hold the results from the tournament held on Oct 22, 2016. It features an Admin Console which allows the tournament head to create the teams, pools, initial match information, and fill out the scores as the day progresses. In view mode, the teams can view their current record, when they play, who they play, and where they play. Not only this, but they can view other teams and their performances along with their own pool matches. After pool play has finished, the scores are run though an algorithm to rank the teams and place them into the bracket with the according seed.
+		</p>
+		<p>
+			This app not only saved time for the tournament administrator, but it allowed players and remote family members to track the progress of the tournament remotely. Throughout the day, their were over 300 unique users!
+		</p>
+  	</div>
+	<div class="bs-callout" class="col-md-12">
+		<h1>Code Summary</h1>
+		<p>
+			The app code can be found <a href="https://github.com/austinHerring/volleyballManager">here</a>. The <a href="http://mean.io/">MEAN Framework</a> was used during development. This was my attempt at using the framework. Its a pretty straightforward app, the only twists were authenticating the admin, and making sure that all endpoints were protected so that no one could edit the data other than the admin. In addition, I used my own algorithm to seed the teams, but I tried out this <a href="https://api.challonge.com/v1">third party API</a> to generate the bracket's UI. I then embedded their code within my own app. It turned out pretty nice.
+		</p>
+		<p>
+			Below are some pictures to preview the app:
+		</p>
+  	</div>
+	<div class="bs-callout">
+		<div class="col-md-3">
+			<img src="../images/vBallTeams.png" alt="vBallTeams" style="display: block;margin: auto;height:400;width:auto">
+		</div>
+		<div class="col-md-3">
+			<img src="../images/vBallTeam.jpg" alt="vBallTeam" style="display: block;margin: auto;height:400;width:auto">
+		</div>
+		<div class="col-md-3">
+			<img src="../images/vBallAdmin.png" alt="vBallAdmin" style="display: block;margin: auto;height:400;width:auto">
+		</div>
+		<div class="col-md-3">
+			<img src="../images/vBallBracket.png" alt="vBallBracket" style="display: block;margin: auto;height:400;width:auto">
+		</div>
+		<p>
+		.
+		</p>
+	</div>
+
+</div>
+
+<div id="bg">
+	<img src="../images/background.jpg" alt="">
+</div>
+</html>
